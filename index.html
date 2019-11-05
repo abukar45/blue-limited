@@ -90,6 +90,46 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        img.logo {
+            height: 3em;
+        }
+
+        .about-body {
+            text-align: left;
+            line-height: 2.2em;
+
+        }
+
+        img.about-image {
+
+            object-fit: cover;
+        }
+
+        section.about {
+            position: relative;
+        }
+
+        .about-float {
+            border: 8px solid floralwhite;
+            padding: 8em;
+            position: absolute;
+            z-index: 1;
+            transform: translate(20%, -110%);
+            height: 100%;
+            width: 500px;
+            font-size: 1.4em;
+            color: #fff;
+            background: rgba(15, 15, 15, 0.7);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        img.features-img {
+
+            height:128px;
+            width:128px;
+        }
+
         .pricing {
             display: -webkit-flex;
             display: flex;
@@ -263,106 +303,112 @@
 
 <body>
 
-        <nav class="navbar navbar-expand-lg  shadow-sm px-md-4 mb-3 bg-white border-bottom">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
+    <nav class="navbar navbar-expand-lg  shadow-sm px-md-4 mb-3 bg-white border-bottom">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo" class="logo"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    About
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">History</a>
-                              
-                             
-                              
-                            </div>
-                          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
 
-                          <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Sports
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Football</a>
-
-                                  <a class="dropdown-item" href="#">Cricket</a>
-                                  
-                                 
-                                  
-                                </div>
-                              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">History</a>
 
 
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Recreation
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="#">Center-Pool</a>
-     
-                                    </div>
-                                  </li>
 
-                                  <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Social Events
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Culture Week</a>
-         
-                                        </div>
-                                      </li>
-                                      <li class="nav-item">
-                                            <a class="nav-link" href="#">Trips</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link" href="#">Canteen</a>
-                                              </li>
-    
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sports
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Football</a>
+
+                        <a class="dropdown-item" href="#">Cricket</a>
 
 
-                    
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recreation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Center-Pool</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Social Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Culture Week</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Canteen</a>
+                </li>
+
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Clubs
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Sports</a>
                         <a class="dropdown-item" href="#">Photography</a>
                         <div class="dropdown-divider"></div>
-                        
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
-                          </li>
 
-                    <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                          </li>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
 
-                          <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                              </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       
     </div> -->
@@ -371,7 +417,7 @@
 
 
     <div class="hero shadow p-3 mb-5 mx-5 bg-white rounded">
-        <div class="row landing">
+        <div class="row landing mb-5">
 
             <div class=" landing-big">
                 <h1 class="landing-header">OSHWAL COLLEGE</h1>
@@ -392,6 +438,126 @@
                     srcset="assets/undraw_buffer_wq43.svg"></div>
         </div>
     </div>
+
+    <section class="about  ">
+        <div class="container my-5 ">
+
+            <div class="row">
+                <div class="col-6"><img src="assets/banner1-2.jpg" alt="" class="about-image w-100 pl-5 h-100">
+
+                    <div class="about-float">
+                        Our History
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="about-body  pl-5">Oshwal college is post-modern tertiary institution located in a serene
+                        environment
+                        on its own grounds on 2nd avenue, parklands, Nairobi. Established in 1992, is the elder
+                        institution
+                        of the many nursery, primary and secondary school institutions owned and managed by the oshwal
+                        education and relief board (OERB) – a charitable organization in Kenya.
+                        Oshwal college has successfully built maintained strong ties and relationships with key
+                        corporate
+                        partners. This has enhanced student’s industry awareness and provided student scholarships,
+                        sponsorships, internships and job placements. In 2017 the college celebrated its 25 years of
+                        academic excellence. Over 5800 students have graduated from various diverse backgrounds of
+                        Africa
+                        and beyond
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="features container">
+
+<div class="row mb-5">
+    <div class="col"> <div class="d-flex feature-block flex-row bg-white shadow rounded">
+            <img src="assets/logo.png" alt="" class="features-img ">
+            <div class="d-flex flex-column rounded">
+                <h4 class="block-header px-2 pt-2">Football</h4>
+                <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+</div>
+    <div class="col">
+            <div class="d-flex feature-block flex-row bg-white shadow rounded">
+                    <img src="assets/logo.png" alt="" class="features-img ">
+                    <div class="d-flex flex-column rounded">
+                        <h4 class="block-header px-2 pt-2">Cricket</h4>
+                        <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+        
+    </div>
+
+
+    <div class="col">
+            <div class="d-flex feature-block flex-row bg-white shadow rounded">
+                    <img src="assets/logo.png" alt="" class="features-img ">
+                    <div class="d-flex flex-column rounded">
+                        <h4 class="block-header px-2 pt-2">Center Pool</h4>
+                        <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+        
+    </div>
+
+</div>
+       
+
+
+
+<div class="row mt-5">
+        <div class="col"> <div class="d-flex feature-block flex-row bg-white shadow rounded">
+                <img src="assets/logo.png" alt="" class="features-img ">
+                <div class="d-flex flex-column rounded">
+                    <h4 class="block-header px-2 pt-2">Football</h4>
+                    <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+    </div>
+        <div class="col">
+                <div class="d-flex feature-block flex-row bg-white shadow rounded">
+                        <img src="assets/logo.png" alt="" class="features-img ">
+                        <div class="d-flex flex-column rounded">
+                            <h4 class="block-header px-2 pt-2">Cricket</h4>
+                            <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+            
+        </div>
+    
+    
+        <div class="col">
+                <div class="d-flex feature-block flex-row bg-white shadow rounded">
+                        <img src="assets/logo.png" alt="" class="features-img ">
+                        <div class="d-flex flex-column rounded">
+                            <h4 class="block-header px-2 pt-2">Center Pool</h4>
+                            <p class="block-para px-2 pb-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+            
+        </div>
+    
+    </div>
+
+
+
+    </section>
 
     <!-- pricing -->
 
@@ -545,7 +711,7 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
