@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
+    <head>
+
+
+     <!-- Bootstrap core CSS -->
+     <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
 <style>
 * {
   box-sizing: border-box;
 }
 
+     
+     img.logo {
+            height: 3em;
+        }
+     
+     
 body {
   margin: 0;
   font-family: Arial;
@@ -24,12 +40,7 @@ body {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
+
 
 .column img {
   margin-top: 8px;
@@ -39,67 +50,166 @@ body {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+  
 }
 </style>
 <body>
 
+
+    
+    
+        <nav class="navbar navbar-expand-lg  shadow-sm px-md-4 mb-3 bg-white border-bottom">
+                <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo" class="logo"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                       
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html#about">History</a>
+        
+        
+        
+                            </div>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sports
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html#sports">Football</a>
+        
+                                <a class="dropdown-item" href="index.html#sports">Cricket</a>
+        
+        
+        
+                            </div>
+                        </li>
+        
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Recreation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html#recreational">Center-Pool</a>
+        
+                            </div>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Social Events
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html#culture">Culture Week</a>
+        
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#trips">Trips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#canteen">Canteen</a>
+                        </li>
+        
+        
+        
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Clubs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html#clubs">Sports</a>
+                                <a class="dropdown-item" href="index.html#clubs">Photography</a>
+                                <div class="dropdown-divider"></div>
+        
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                  
+                </div>
+            </nav>
+<div class="mx-auto w-50">
 <!-- Header -->
 <div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
+  <h1 class="text-info text-uppercase">Our  Images </h1>
+  
 </div>
 
 <!-- Photo Grid -->
 <div class="row"> 
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+  <div class="col column">
+    <img src="assets/images/download (1).jpg" style="width:100%">
+    <img src="assets/images/download (2).jpg" style="width:100%">
+    <img src="assets/images/download (3).jpg" style="width:100%">
+    <img src="assets/images/images (8).jpg" style="width:100%">
+    <img src="assets/images/images (9).jpg" style="width:100%">
+    
+    
   </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>
-</div>
+  <div class="col column">
+    <img src="assets/images/download.jpg" style="width:100%">
+    <img src="assets/images/download (4).jpg" style="width:100%">
+    <img src="assets/images/images (3).jpg" style="width:100%">
+    <img src="assets/images/images (4).jpg" style="width:100%">
+    <img src="assets/images/images (5).jpg" style="width:100%">
 
+    
+    
+  </div>  
+  <div class="col column">
+    <img src="assets/images/images (1).jpg" style="width:100%">
+    <img src="assets/images/images (2).jpg" style="width:100%">
+    <img src="assets/images/images (6).jpg" style="width:100%">
+    <img src="assets/images/images (7).jpg" style="width:100%">
+    <img src="assets/images/images.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="col column">
+        <img src="assets/images/images (10).jpg" style="width:100%">
+        <img src="assets/images/images (11).jpg" style="width:100%">
+        <img src="assets/images/images (12).jpg" style="width:100%">
+        <img src="assets/images/images (13).jpg" style="width:100%">
+        <img src="assets/images/images (14).jpg" style="width:100%">
+  </div>
+  
+</div>
+</div>
 </body>
 </html>
